@@ -33,5 +33,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   extra: {
     apiBaseUrl: process.env.EXPO_PUBLIC_API_BASE_URL || 'https://api.kambista.com/v1',
     appEnv: process.env.EXPO_PUBLIC_APP_ENV || 'development',
+    eas: {
+      projectId: '17beb2b5-baec-49b6-bf83-09b994cc40a9',
+    },
   },
 });
