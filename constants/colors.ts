@@ -1,0 +1,16 @@
+export const colors = {
+  primary: '#0D1B40',
+  accent: '#00D4C8',
+  accentDisabled: '#A8EDE9',
+  blueInfo: '#EBF4FF',
+  orangeWarning: '#FFF3EB',
+  textPrimary: '#1A1A1A',
+  textSecondary: '#666666',
+  border: '#E0E0E0',
+  background: '#F5F5F5',
+  white: '#FFFFFF',
+  error: '#FF4444',
+  success: '#00C851',
+} as const;
+
+export type ColorName = keyof typeof colors;
