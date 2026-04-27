@@ -34,7 +34,7 @@ apiClient.interceptors.response.use(
   (error: AxiosError) => {
     if (error.response?.status === 401) {
       // Unauthorized - logout user
-      useAuthStore.getState().logout();
+      useAuthStore.getState().clearSession();
     }
     return Promise.reject(error);
   }
